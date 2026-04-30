@@ -12,6 +12,6 @@ class ptbr {
 
 class spanish {
     public static void main(String[] args) {
-        System.out.println("Ola Muendo!");
+        System.out.println("¡Hola Mundo!");
     }
 }
