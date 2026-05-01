@@ -1,13 +1,30 @@
+import java.util.Scanner;
+
 public class CalculoMediaFilmes {
     public static void main (String[] args) {
-        double notaUm = 9.82;
-        double notaDois = 6.35;
+        Scanner entrada = new Scanner(System.in);
+
+        //entrada do primeiro valor.
+        System.out.println("Digite o valor da primeira nota: ");
+        String umNota = entrada.nextLine();
+
+        //entrada do segundo valor.
+        System.out.println("Digite o valor da segunda nota: ");
+        String doisNota = entrada.nextLine();
+
+        //conversão String -> Double
+        double notaUm = Double.parseDouble(umNota);
+        double notaDois = Double.parseDouble(doisNota);
+
+        //cálculo média.
         int media = (int) (notaUm + notaDois) / 2;
-        String mensagem = String.format("O resultado do cálculo da média das notas disponíveis foi: %d", media);
-        System.out.println("***************************");
-        System.out.println("*A média das nota de Filme*");
-        System.out.println("***************************");
-        System.out.println("\n");
+        String mensagem = String.format("""
+        ***************************
+        *A média das nota de Filme*
+        ***************************
+        \n
+        O resultado do cálculo da média das avaliações é: %d
+        """, media);
         System.out.println(mensagem);
     }
 }
