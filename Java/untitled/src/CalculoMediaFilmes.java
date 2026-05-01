@@ -6,16 +6,12 @@ public class CalculoMediaFilmes {
 
         //entrada do primeiro valor.
         System.out.println("Digite o valor da primeira nota: ");
-        String umNota = entrada.nextLine();
+        double notaUm = entrada.nextDouble();
 
         //entrada do segundo valor.
         System.out.println("Digite o valor da segunda nota: ");
-        String doisNota = entrada.nextLine();
-
-        //conversão String -> Double
-        double notaUm = Double.parseDouble(umNota);
-        double notaDois = Double.parseDouble(doisNota);
-
+        double notaDois = entrada.nextDouble();
+        
         //cálculo média.
         int media = (int) (notaUm + notaDois) / 2;
         String mensagem = String.format("""
