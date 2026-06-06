@@ -1,0 +1,23 @@
+Index: Projetos.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<module type=\"JAVA_MODULE\" version=\"4\">\n  <component name=\"NewModuleRootManager\" inherit-compiler-output=\"true\">\n    <exclude-output />\n    <content url=\"file://$MODULE_DIR$\">\n      <sourceFolder url=\"file://$MODULE_DIR$/Java/untitled/src\" isTestSource=\"false\" />\n    </content>\n    <orderEntry type=\"inheritedJdk\" />\n    <orderEntry type=\"sourceFolder\" forTests=\"false\" />\n  </component>\n</module>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Projetos.iml b/Projetos.iml
+--- a/Projetos.iml	(revision fff2b1c9fb32aa47a89d8cd611ee65f6e00606cc)
++++ b/Projetos.iml	(date 1778981347319)
+@@ -1,8 +1,10 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <module type="JAVA_MODULE" version="4">
+-  <component name="NewModuleRootManager" inherit-compiler-output="true">
++  <component name="NewModuleRootManager">
++    <output url="file:///production/Projetos" />
++    <output-test url="file:///test/Projetos" />
+     <exclude-output />
+-    <content url="file://$MODULE_DIR$">
++    <content url="file://$MODULE_DIR$/Java/untitled/src">
+       <sourceFolder url="file://$MODULE_DIR$/Java/untitled/src" isTestSource="false" />
+     </content>
+     <orderEntry type="inheritedJdk" />
